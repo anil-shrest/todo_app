@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="4in"
+    android:background="#EDECEC"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/titlePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Edit Todo"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:layout_marginBottom="25dp"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_marginTop="20dp"
+            android:background="#FF536DFE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/bgitemdoes"
+        android:orientation="vertical"
+        android:paddingBottom="22dp"
+        android:paddingTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addTitle"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Add a title"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/titledoes"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:paddingLeft="12dp"
+                android:textColorHint="#9F9E9E"
+                android:textColor="#000"
+                android:background="@drawable/bginputset"
+                android:hint="What you need to do!"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addDesc"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Add a description"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/descdoes"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:paddingLeft="12dp"
+                android:textColorHint="#9F9E9E"
+                android:textColor="#000"
+                android:background="@drawable/bginputset"
+                android:hint="Describe task"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addDate"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Add a date"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/datebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimaryDark"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/datedoes"
+                android:layout_width="35mm"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/btnDate"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#2B2B2B"
+                android:textColorHint="#5C5858"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Update"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:background="@drawable/bgbtnsave"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Delete"
+            android:textColor="#FFFEFE"
+            android:textAllCaps="false"
+            android:background="@drawable/bgbtncancel"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
